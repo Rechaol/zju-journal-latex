@@ -1,0 +1,97 @@
+\documentclass[UTF8, 12pt]{ctexart}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+% 图表标题双语设置（与文档1一致）
+\captionsetup[figure]{name={图}, labelsep=quad, format=hang, font=small, labelfont=bf}
+\captionsetup[table]{name={表}, labelsep=quad, format=hang, font=small, labelfont=bf}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+
+
+
+\begin{document}
+
+% 中文标题与作者（对应文档1结构）
+\title{中文标题}
+
+\author{张三丰（XX学院XX专业班级，学号）}
+
+\date{}
+\maketitle
+
+% 中文摘要（包含目的、方法、结果、结论，第三人称）
+\begin{abstract}
+
+尽量写成报道性摘要，包括目的、方法、结果和结论四部分（200~300字）。摘要应具独立性和自含性，采用第三人称的写法，不必以"本文""作者"等做主语。
+
+\end{abstract}
+
+\noindent
+
+\textbf{关键词：} 关键词一；关键词二；关键词三；关键词三（关键词选词要规范、术语化、具体、能直观反映本文要点）
+
+% 英文标题、作者、摘要（与中文一致，第三人称）
+\renewcommand{\abstractname}{Title}
+
+\begin{center}
+  \textbf{Title}\\
+  \vspace{0.5em}
+  Zhang Sanfeng (XX College XX Major Class, Student ID)
+\end{center}
+
+\begin{abstract}
+
+    English abstract should be consistent with Chinese abstract in meaning, and the length can be appropriately extended if necessary. It should also be written in the third person.
+
+\end{abstract}
+
+\noindent
+\textbf{Key Words:} Boolean function; tabular methods; minterm table; e derivative; cryptography (中英文关键词须一一对应)
+
+% 正文结构（与文档1一致，引言可选）
+\section{引言}
+
+引言可要可不要，根据具体情况定。……
+
+\section{第1节标题}
+
+第1节的正文。……
+
+% 公式示例（居中编号）
+定义1 设 \( f(x) \) 为……
+\[ f(x) = x^2 + 2x + 1 \]
+式(1)中，\( x \) 表示XXXX，由式可知，……。
+
+% 三线表示例（中英文标题对照）
+\begin{table}[H]
+  \centering
+  \caption{中文名称（三线表）}
+  \label{tab:table1}
+  \begin{tabular}{ccc}
+    \toprule
+    列1 & 列2 & 列3 \\
+    \midrule
+    内容1 & 内容2 & 内容3 \\
+    \bottomrule
+  \end{tabular}
+  \small{\textit{Table 1. The table’s English title}}
+\end{table}
+
+% 参考文献格式（与文档1一致，包含中英文对照）
+\section{参考文献}
+张三丰，李四. XX理论研究[M]. 杭州：浙江大学出版社，2001. \\
+ZHANG S F, LI S. A study of XXX[M]. Hangzhou: Zhejiang University Press, 2001. \\
+赵六. XX理论的方法研究[D]. 杭州：浙江大学，2007. \\
+ZHAO L. Research on XXX[D]. Hangzhou: Zhejiang University, 2007. \\
+张三，李四，王五，等. 对XX的研究[J]. 浙江大学学报（理学版），2013,40(1)：1-4. \\
+ZHANG S, LI S, WANG W, et al. The research of XX[J]. Journal of Zhejiang University (Science Edition), 2023, 40(1): 1-4. \\
+LI W W, WANG Z. The e-derivative of Boolean functions and its application in the fault detection and cryptographic system[J]. Kybernetes, 2008, 37(2): 49-65. \\
+李卫卫，王卓，张志杰. 导数和e-导数在研究H布尔函数中的应用[C]//中国通信学会第五届学术会议论文集. 北京：中国通信学会, 2008：267-271. \\
+LI W W, WANG Z, ZHANG Z J. The application of derivative and e-derivative on H-Boolean function[C]//CHINA SCI-TEC. Beijing: China Institute of Communications, 2008, 1(1): 267-271.
+\end{document}
